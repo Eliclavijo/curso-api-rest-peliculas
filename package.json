@@ -1,0 +1,19 @@
+{
+  "name": "curso-api-rest-peliculas",
+  "version": "1.0.0",
+  "description": "Practicas de javascript, html, css y/o php",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eliclavijo/curso-api-rest-peliculas.git"
+  },
+  "author": "ELIZABETH CLAVIJO ALZATE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eliclavijo/curso-api-rest-peliculas/issues"
+  },
+  "homepage": "https://github.com/Eliclavijo/curso-api-rest-peliculas#readme"
+}
