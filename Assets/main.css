@@ -1,11 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
     background-image: url('Imagenes/Fondo1.jpg');
     background-size: cover;
     height: 300px;
+}
+
+.header1 {
+    background-image: url('Imagenes/Fondo1.jpg');
+    background-size: cover;
+    height: 300px;
+}
+
+.header1 .titulo1 {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: -9px;
+    margin-bottom: 0px;
+}
+
+.headerHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.headerHeader .Logo {
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.headerHeader nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.headerHeader nav ul li {
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.headerHeader nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.titulo1 {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 32px;
+    margin-bottom: 0px;
+}
+
+.titulo2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.containerGeneral {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 10px;
+    margin: 20px 50px;
+}
+
+.containerGeneral .lado2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.blog-info {
+    padding: 20px;
+    margin-top: -10px;
+    background-color: #F0F3F1;
+}
+
+.img1 {
+    width: 100%;
+    height: auto;
+}
+
+.admin-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.admin-list li {
+    font-size: 14px;
+    padding: 5px;
+    color: #8360c3;
+    /* background: #8360c3;
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+    background: linear-gradient(to right, #2ebf91, #8360c3); */
+}
+
+.admin-list li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-info h3 .vv-link {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    display: inherit;
+    color: #334252;
+    text-decoration: none;
+}
+
+.vv-link1 {
+    margin-top: 10px;
+    background-color: #8360c3;
+    font-size: 15px;
+    line-height: 26px;
+    display: inherit;
+    color: #334252;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.input-group {
+    width: 95% !important;
+    margin: auto;
+    padding-top: 23px;
+    padding-bottom: 20px;
+}
+
+.tendencias {
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+hr {
+    width: 95%;
+    margin: auto !important;
+}
+
+.titulo3 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: #334252;
+    font-weight: bold;
+}
+
+.trendingPreview-movieList {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 241px;
+    padding-left: 24px;
+    padding-bottom: 16px;
+    padding-top: 15px;
+}
+
+
+.trendingPreview-movieList::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.trendingPreview-movieList::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.trendingPreview-movieList::-webkit-scrollbar-button:increment,.trendingPreview-movieList::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.trendingPreview-movieList::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.trendingPreview-movieList::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.trendingPreview-movieList::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+/* .trendingPreview-movieList::-webkit-scrollbar {
+    height: 5px;
+    background-color: #334252;
+}
+
+.trendingPreview-movieList::-webkit-scrollbar-thumb {
+    height: 5px;
+    background-color: #334252;
+} */
+
+.trendingPreview-movieList .movie-container {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.trendingPreview-movieList .movie-container .movie-img {
+    height: 225px;
+    min-height: 225px;
+    max-height: 225px;
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+}
+
+.catApp{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 10px; 
+}
+
+.catApp .catPeli{
+       background: #8360c3;
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+    background: linear-gradient(to right, #2ebf91, #8360c3);
+    padding: 5px;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 5px;
 }

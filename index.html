@@ -11,10 +11,91 @@
 
 <body>
     <header>
-
+        <div class="headerHeader">
+            <img src="Assets/Imagenes/Logo.png" alt="" class="Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="titulo1">Blog</p>
+        <p class="titulo2" id="clock">
+            <span id="date"></span>
+            <span id="time"></span>
+        </p>
     </header>
+    <section class="containerGeneral">
+        <div class="lado1">
+            <div class="categorias">
+                <p>Categorias</p>
+            </div>
+        </div>
+        <div class="lado2">
+            <div class="cardPractica">
+                <img src="Assets/Imagenes/img1.png" alt="" class="img1">
+                <div class="blog-info">
+                    <ul class="admin-list">
+                        <li><a href="blog-single.html">
+                                <span class="fa fa-calendar" aria-hidden="true"></span> Enero 20 - 2023
+                            </a></li>
+                        <li><a href="blog-single.html">
+                                <span class="fa fa-user" aria-hidden="true"></span> Admin
+                            </a></li>
+                    </ul>
+                    <br />
+                    <h3> <a href="practica1.html" class="vv-link">
+                            Practica 1 (Consumo api peliculas)</a>
+                    </h3>
+
+                    <a href="practica1.html" class="vv-link1">Ver mas</a>
+                </div>
+            </div>
+            <div class="cardPractica">
+                <img src="Assets/Imagenes/img1.png" alt="" class="img1">
+                <div class="blog-info">
+                    <ul class="admin-list">
+                        <li><a href="blog-single.html">
+                                <span class="fa fa-calendar" aria-hidden="true"></span> Enero 21 - 2023
+                            </a></li>
+                        <li><a href="blog-single.html">
+                                <span class="fa fa-user" aria-hidden="true"></span> Admin
+                            </a></li>
+                    </ul>
+                    <br />
+                    <h3> <a href="practica2.html" class="vv-link">
+                            Practica 2 (Cotizador)</a>
+                    </h3>
+
+                    <a href="practica2.html" class="vv-link1">Ver mas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const dateElement = document.getElementById('date');
+        const timeElement = document.getElementById('time');
+
+        function updateClock() {
+            const now = new Date();
+            const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
+                'Octubre', 'Noviembre', 'Diciembre'
+            ];
+            const days = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
+
+            const date = `${days[now.getDay()]}, ${now.getDate()} ${months[now.getMonth()]} ${now.getFullYear()}`;
+            const time = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+
+            dateElement.innerHTML = date;
+            timeElement.innerHTML = time;
+        }
+
+        setInterval(updateClock, 1000);
+    </script>
     <script src="Assets/secrets.js"></script>
     <script src="Assets/main.js"></script>
+    <script src="https://kit.fontawesome.com/0db7247423.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
